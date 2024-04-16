@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Technical Documentation</title>
+  <style>
+    code {
+      color: rgb(27, 0, 204);
+
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/techdoc.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>HTML</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#HTML_BASICS">HTML BASICS</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#HTML_FORMATTING">HTML FORMATTING</a>
+      </li>
+      <li><a class="nav-link" href="#HTML_LAYOUTS">HTML LAYOUTS</a></li>
+      <li><a class="nav-link" href="#SYMBOLS">SYMBOLS</a></li>
+      <li>
+        <a class="nav-link" href="#HTML_iFRAMES">HTML FRAMES</a>
+      </li>
+      <li><a class="nav-link" href="#HTML_JAVASCRIPT">HTML JAVASCRIPT</a></li>
+      <li><a class="nav-link" href="#CSS">CSS</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <h2>What is HTML?</h2>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link",
+          etc.</li>
+      </article>
+    </section>
+    <section class="main-section" id="HTML BASICS">
+      <header>HTML BASICS</header>
+      <article>
+        <H2>Documents</H2>
+        <p>All HTML documents must start with a document type declaration:
+          <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>.
+        </p>
+        <p>The HTML document itself begins with
+          <code class="w3-codespan">&lt;html&gt;</code> and ends with
+          <code class="w3-codespan">&lt;/html&gt;</code>.
+        </p>
+        <p>The visible part of the HTML document is between <code class="w3-codespan">&lt;body&gt;</code> and
+          <code class="w3-codespan">&lt;/body&gt;</code>.
+        </p>
+        <h2>HTML Paragraphs</h2>
+        <p>HTML paragraphs are defined with the <code class="w3-codespan">&lt;p&gt;</code> tag:</p>
+        <h2>HTML Links</h2>
+        <p>HTML links are defined with the <code class="w3-codespan">&lt;a&gt;</code> tag:</p>
+
+      </article>
+    </section>
+    <section class="main-section" id="#HTML FORMATTING">
+      <header>HTML FORMATTING</header>
+      <article>
+        <p>Formatting elements were designed to display special types of text:</p>
+        <ul>
+          <li><code class="w3-codespan">&lt;b&gt;</code> - Bold text</li>
+          <li><code class="w3-codespan">&lt;strong&gt;</code> - Important text</li>
+          <li><code class="w3-codespan">&lt;i&gt;</code> - Italic text</li>
+          <li><code class="w3-codespan">&lt;em&gt;</code> - Emphasized text</li>
+          <li><code class="w3-codespan">&lt;mark&gt;</code> - Marked text</li>
+          <li><code class="w3-codespan">&lt;small&gt;</code> - Smaller text</li>
+          <li><code class="w3-codespan">&lt;del&gt;</code> - Deleted text</li>
+          <li><code class="w3-codespan">&lt;ins&gt;</code> - Inserted text</li>
+          <li><code class="w3-codespan">&lt;sub&gt;</code> - Subscript text</li>
+          <li><code class="w3-codespan">&lt;sup&gt;</code> - Superscript text</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_LAYOUTS">
+      <header>HTML LAYOUTS</header>
+      <article>
+        <p>HTML has several semantic elements that define the different parts of a web page:</p>
+        <div class="w3-hide-large w3-hide-medium">
+          <div class="w3-dark-grey">
+            <img alt="HTML5 Semantic Elements" src="img_sem_elements.gif"
+              style="width:100%;max-width:350px;text-align:center;display:block;margin:auto">
+          </div>
+          <div style="margin:16px 0">
+            <code class="w3-codespan">&lt;header&gt;</code> - Defines a header for a document or a section<br>
+            <code class="w3-codespan">&lt;nav&gt;</code> - Defines a set of navigation links<br>
+            <code class="w3-codespan">&lt;section&gt;</code> - Defines a section in a document<br>
+            <code class="w3-codespan">&lt;article&gt;</code> - Defines an independent,
+            self-contained content<br>
+            <code class="w3-codespan">&lt;aside&gt;</code> - Defines content aside from the content (like a sidebar)<br>
+            <code class="w3-codespan">&lt;footer&gt;</code> - Defines a footer for a document or a section<br>
+            <code class="w3-codespan">&lt;details&gt;</code> - Defines additional details
+            that the user can open and close on demand<br>
+            <code class="w3-codespan">&lt;summary&gt;</code> - Defines a heading for the <code
+              class="w3-codespan">&lt;details&gt;</code> element<br>
+          </div>
+        </div>
+
+        <table style="width:100%" class="w3-hide-small">
+          <tr>
+            <td style="width:225px;vertical-align:top">
+              <img alt="HTML5 Semantic Elements" src="img_sem_elements.gif" width="219" height="258">
+            </td>
+            <td style="vertical-align:top">
+              <ul>
+                <li> <code class="w3-codespan">&lt;header&gt;</code> - Defines a header for a document or a section</li>
+                <li> <code class="w3-codespan">&lt;nav&gt;</code> - Defines a set of navigation links</li>
+                <li> <code class="w3-codespan">&lt;section&gt;</code> - Defines a section in a document</li>
+                <li> <code class="w3-codespan">&lt;article&gt;</code> - Defines an independent, self-contained
+                  content</li>
+                <li> <code class="w3-codespan">&lt;aside&gt;</code> - Defines content aside from the content (like a
+                  sidebar)</li>
+                <li> <code class="w3-codespan">&lt;footer&gt;</code> - Defines a footer for a document or a section</li>
+                <li> <code class="w3-codespan">&lt;details&gt;</code> - Defines additional details
+                  that the user can open and close on demand</li>
+                <li> <code class="w3-codespan">&lt;summary&gt;</code> - Defines a heading for the <code
+                    class="w3-codespan">&lt;details&gt;</code> element</li>
+              </ul>
+              <p>You can read more about semantic elements in our
+                <a href="html5_semantic_elements.asp">HTML Semantics</a> chapter.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <section class="main-section" id="SYMBOLS">
+      <header>SYMBOLS</header>
+      <ARticle>
+        <p>HTML entities were described in the previous chapter.</p>
+        <p>Many mathematical, technical, and currency symbols, are not present on a normal keyboard.</p>
+        <p>To add such symbols to an HTML page, you can use the entity name or the entity number
+          (a decimal or a hexadecimal reference) for the symbol</p>
+      </ARticle>
+      <section class="main-section" id="HTML_iFRAMES">
+        <header>HTML iFRAMES</header>
+        <article>
+          <h2>HTML Iframe Syntax</h2>
+          <p>The HTML <code class="w3-codespan">&lt;iframe&gt;</code> tag specifies an
+            inline frame.</p>
+          <p>An inline frame is used to embed another document within the current HTML document.</p>
+          <div class="w3-example">
+            <h3>Syntax</h3>
+            <div class="w3-code notranslate htmlHigh">
+              &lt;iframe src=&quot;<i>url</i>&quot; title=&quot;<em>description</em>&quot;&gt;&lt;/iframe&gt;
+            </div>
+          </div>
+          <p><strong>Tip:</strong> It is a good practice to always include a <code class="w3-codespan">
+title</code> attribute for the <code class="w3-codespan">&lt;iframe&gt;</code>.
+            This is used by screen readers to read out what the content of the iframe is.</p>
+          <h2>Iframe - Set Height and Width</h2>
+          <p>Use the <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code> attributes to
+            specify the
+            size of the iframe.</p>
+          <p>The height and width are specified in pixels by default:</p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+              &lt;iframe src=&quot;demo_iframe.htm&quot; height=&quot;200&quot; width=&quot;300&quot;
+              title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
+            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_iframe_height_width" target="_blank">Try
+              it Yourself &raquo;</a>
+          </div>
+          <h2>Iframe - Remove the Border</h2>
+          <p>By default, an iframe has a border around it. </p>
+          <p>To remove the border, add the <code class="w3-codespan">style</code> attribute and use the CSS
+            <code class="w3-codespan">border</code> property:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+              &lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:none;&quot;
+              title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
+            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_iframe_frameborder" target="_blank">Try
+              it Yourself &raquo;</a>
+          </div>
+          <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+              &lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:2px solid red;&quot;
+              title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
+            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_iframe_border2" target="_blank">Try it
+              Yourself &raquo;</a>
+          </div>
+          <h2>Iframe - Target for a Link</h2>
+          <p>An iframe can be used as the target frame for a link.</p>
+          <p>The <code class="w3-codespan">target</code> attribute
+            of the link must refer to the <code class="w3-codespan">name</code> attribute of the iframe:</p>
+          <div class="w3-example">
+            <h3>Example</h3>
+
+            <div class="w3-code notranslate htmlHigh">
+              &lt;iframe src=&quot;demo_iframe.htm&quot; name=&quot;iframe_a&quot; title=&quot;Iframe
+              Example&quot;&gt;&lt;/iframe&gt;<br><br>
+              &lt;p&gt;&lt;a href=&quot;https://www.w3schools.com&quot;
+              target=&quot;iframe_a&quot;&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_iframe_target" target="_blank">Try it
+              Yourself &raquo;</a>
+          </div>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_JAVASCRIPT">
+        <header>HTML JAVASCRIPT</header>
+        <article>
+          <h2>The HTML &lt;script&gt; Tag</h2>
+          <p>The HTML <code class="w3-codespan">&lt;script&gt;</code> tag is used to define a client-side script
+            (JavaScript).</p>
+          <p>The <code class="w3-codespan">&lt;script&gt;</code> element either contains script statements, or it points
+            to an
+            external script file through the <code class="w3-codespan">src</code> attribute.</p>
+          <p>Common uses for JavaScript are image manipulation, form validation, and
+            dynamic changes of content.</p>
+          <p>To select an HTML element, JavaScript most often uses the
+            <code class="w3-codespan">document.getElementById()</code> method.
+          </p>
+          <p>This JavaScript example writes &quot;Hello JavaScript!&quot; into an HTML element with id=&quot;demo&quot;:
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="CSS">
+        <header>CSS</header>
+        <article>
+          <p class="intro">CSS stands for Cascading Style Sheets.</p>
+          <p class="intro">CSS saves a lot of work. It can control the layout of multiple
+            web pages all at once.</p>
+          <h2>What is CSS?</h2>
+          <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+          <p>With CSS, you can control the color, font, the size of text, the spacing
+            between elements, how elements are positioned and laid out, what background
+            images or background colors are to be used, different displays for different devices
+            and screen sizes, and much more!</p>
+          <h2>Using CSS</h2>
+          <p>CSS can be added to HTML documents in 3 ways:</p>
+          <ul>
+            <li><strong>Inline</strong> - by using the <code class="w3-codespan">style</code> attribute inside HTML
+              elements</li>
+            <li><strong>Internal</strong> - by using a <code class="w3-codespan">&lt;style&gt;</code> element in the
+              <code class="w3-codespan">&lt;head&gt;</code> section
+            </li>
+            <li><strong>External</strong> - by using a <code class="w3-codespan">&lt;link&gt;</code>
+              element to link to an external CSS file</li>
+          </ul>
+          <p>The most common way to add CSS, is to keep the styles in external CSS
+            files. However, in this tutorial we will use inline and internal styles, because this is easier to
+            demonstrate, and easier for you to try it yourself.</p>
+          <h2>Inline CSS</h2>
+          <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+          <p>An inline CSS uses the <code class="w3-codespan">style</code> attribute of an HTML element.</p>
+          <p>The following example sets the text color of the <code class="w3-codespan">&lt;h1&gt;</code> element to
+            blue,
+            and the text color of the <code class="w3-codespan">&lt;p&gt;</code> element to red:</p>
+          <h2>Internal CSS</h2>
+          <p>An internal CSS is used to define a style for a single HTML page.</p>
+          <p>An internal CSS is defined in the <code class="w3-codespan">&lt;head&gt;</code> section of an HTML page,
+            within a <code class="w3-codespan">&lt;style&gt;</code> element.</p>
+          <p>The following example sets the text color of ALL the <code class="w3-codespan">&lt;h1&gt;</code> elements
+            (on that page) to blue, and the text color of ALL the <code class="w3-codespan">&lt;p&gt;</code> elements to
+            red. In addition, the page will be displayed with a &quot;powderblue&quot; background
+            color:&nbsp;</p>
+          <h2>External CSS</h2>
+          <p>An external style sheet is used to define the style for many HTML pages.</p>
+          <p>To use an external style sheet, add a link to it in the <code class="w3-codespan">&lt;head&gt;</code>
+            section of each HTML page:</p>
+        </article>
+      </section>
+      
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://www.w3schools.com/html/default.asp" target="_blank">Here</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
